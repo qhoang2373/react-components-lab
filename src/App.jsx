@@ -1,3 +1,5 @@
+import WheaterForecast from "./WeatherForecast.jsx";
+
 const weatherForecasts = [
   {
     day: 'Mon',
