@@ -1,7 +1,8 @@
-import weatherForecast from "./WeatherForecast.jsx";
-import './WeatherForecast.css';
+// src/App.jsx
+import './App.css'; // import css style 
+import WeatherForecastBit from './WeatherForecast.jsx' // import weather forecast details
 
-const App = () => {
+
   const weatherForecasts = [
     {
       day: 'Mon',
@@ -39,27 +40,20 @@ const App = () => {
       time: 'Night',
     },
   ];
+  // ^^ array representing each day of the week and it's properties
   
-  return (
-    <>
-    <h1>Local Weather</h1>
+const App = () => {
+
+return (
+  <>
+    <h1>Weather Forecast of the Week</h1>
     <section>
-        {weatherForecasts.map((forecast, index ) => (
-          <weatherForecast
-          key={index}
-          day={forecast.day}
-          img={forecast.img}
-          imgAlt={forecast.imgAlt}
-          conditions={forecast.conditions}
-          time={forecast.time}
-          />
+      {weatherForecasts.map((weatherForecast) => ( // .map used to iterate through array
+        <WeatherForecastBit weatherForecast={weatherForecast} /> // Render WeatherForecastBit within map
+      ))}
+    </section>
+  </>
+ );
+};
 
-        ))}
-      </section>
-    </>
-    
-  );
-}
-
-export default App
-
+export default App;

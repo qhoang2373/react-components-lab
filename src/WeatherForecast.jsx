@@ -1,13 +1,4 @@
-import './WeatherForecast.css' // Import the CSS file
+import "./WeatherForecast.css"
 
 
-
-
-
-
-
-
-
-
-
-export default WeatherForecast;
+export default WeatherForecastBit
