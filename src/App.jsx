@@ -1,4 +1,3 @@
-// src/App.jsx
 import './App.css'; // import css style 
 import WeatherForecastBit from './WeatherForecast.jsx' // import weather forecast details
 
